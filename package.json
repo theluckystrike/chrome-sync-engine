@@ -1,0 +1,37 @@
+{
+    "name": "chrome-sync-engine",
+    "version": "0.1.0",
+    "description": "Two-way storage sync for Chrome extensions — conflict resolution, merge strategies, quota management, and diff-based sync for MV3.",
+    "author": "Zovo <hello@zovo.one>",
+    "license": "MIT",
+    "keywords": [
+        "chrome-extension",
+        "sync",
+        "storage",
+        "conflict-resolution",
+        "merge",
+        "quota",
+        "manifest-v3",
+        "browser-extension",
+        "data"
+    ],
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/theluckystrike/chrome-sync-engine.git"
+    },
+    "main": "./dist/index.js",
+    "types": "./dist/index.d.ts",
+    "files": [
+        "dist",
+        "README.md",
+        "LICENSE"
+    ],
+    "scripts": {
+        "build": "tsc",
+        "prepublishOnly": "npm run build"
+    },
+    "devDependencies": {
+        "@types/chrome": "^0.0.260",
+        "typescript": "^5.3.3"
+    }
+}
